@@ -1,0 +1,97 @@
+:root {
+  --LightCyan: hsl(193, 38%, 86%);
+  --NeonGreen: hsl(150, 100%, 66%);
+  --GrayishBlue: hsl(217, 19%, 16%);
+  --DarkGrayishBlue: hsl(217, 19%, 24%);
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  background-color: var(--GrayishBlue);
+}
+
+h1 {
+  letter-spacing: 3px;
+  font-size: 0.75rem;
+  color: var(--NeonGreen);
+}
+
+p {
+  font: size 1.5em;
+  color: var(--LightCyan);
+}
+
+img {
+  display: block;
+}
+
+button {
+  border: none;
+}
+
+.main-div {
+  padding: 2% 3%0;
+  margin: 30vh auto 0;
+  text-align: center;
+  width: 25vw;
+  border-radius: 10px;
+  background-color: var(--DarkGrayishBlue);
+}
+
+.divider-bar {
+  margin: 5vh auto 1vh;
+  width: 100%;
+}
+
+.dice-container {
+  border-radius: 100%;
+  background-color: var(--NeonGreen);
+  width: 4vw;
+  height: 4vw;
+  position: relative;
+  bottom: -2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.dice {
+  width: 50%;
+  position: relative;
+}
+
+.dice-container:hover {
+  box-shadow: 0 0 40px var(--NeonGreen);
+}
+
+@media (max-width: 768px) {
+  .main-div {
+    margin: 20vh auto;
+    width: 80vw;
+    padding: 7% 5% 0;
+  }
+
+  h1 {
+    letter-spacing: 5px;
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1.7rem;
+  }
+
+  .dice-container {
+    bottom: -8vw;
+    width: 15vw;
+    height: 15vw;
+  }
+
+  .dice {
+    width: 43%;
+  }
+}
